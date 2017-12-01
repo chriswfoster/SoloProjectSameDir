@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch:700");
+
+.navz {
+  height: 16vh;
+  position: static;
+  border-width: 1px;
+  border-bottom-style: outset;
+  border-color: grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  margin-bottom: -2px;
+}
+
+.dreamnotesfont {
+  font-size: 60px;
+}
+
+.loginbuttons {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+.loginbutton {
+  margin-right: 5px;
+}
+
+.homeflex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  height: auto;
+}
+
+.maxheight {
+  height: 100vh;
+}
+
+/*  ---------- HERE IS THE POPUP CSS ----------*/
+
+.wrapstorybuttons {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: stretch;
+}
+.savebuttonalignment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: stretch;
+  margin-top: 2%;
+  margin-right: 12%;
+}
+.sharebutton {
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+  width: auto;
+  padding: 15px;
+  cursor: pointer;
+  text-decoration-color: white;
+  border: solid;
+}
+
+/* Start popup css */
+
+@keyframes bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes inner {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes inner {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.popup__check {
+  display: none;
+}
+
+.popup__base,
+.popup__bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: zoom-out;
+}
+
+.popup__base {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.popup__check:checked + .popup__base {
+  display: block;
+  animation-name: bg;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: bg;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.popup__inner {
+  position: absolute;
+  z-index: 10;
+  width: 70%;
+  height: 70%;
+
+  top: 15%;
+  left: 15%;
+  display: block;
+  cursor: default;
+}
+
+.popup__check:checked + .popup__base .popup__inner {
+  animation-name: inner;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: inner;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.popup__textbox {
+  height: 80%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 1%;
+  overflow: auto;
+}
+
+.popup__calign {
+  float: right;
+  padding-right: 60px;
+  font-size: 50px;
+}
+
+.popup__close {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  z-index: 10;
+  text-align: right;
+  cursor: pointer;
+}
+
+.poptextboxes {
+  height: 75%;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.poptextboxes2 {
+  height: 25%;
+  width: 80%;
+  padding: 5px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.poptextboxes3 {
+  height: 35%;
+  width: 80%;
+  padding: 5px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
+
+.savebuttonstory {
+  color: white;
+  background-color: black;
+  border-style: solid;
+  padding: 5px;
+  width: auto;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.storybuttons {
+  color: white;
+  background-color: black;
+  border-style: solid;
+  padding: 5px;
+  width: auto;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -50px;
+}
+
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+}
+
+.whitetext {
+  color: white;
+}
+
+/* ----------------------------- NEW HOME PAGE LAYOUT ----------------------------- */
+
+/* -----------------------------CSS SLIDE IN BY YOURS TRULY ----------------------*/
+
+@keyframes bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slider {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 20%;
+  }
+}
+
+@-webkit-keyframes bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slider {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 20%;
+  }
+}
+
+.slide__check {
+  display: none;
+}
+
+.slide__base,
+.slide__bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: zoom-out;
+  overflow: hidden;
+}
+
+.slide__base {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.slide__check:checked + .slide__base {
+  display: block;
+  animation-name: bg;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: bg;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.slide__inner {
+  position: absolute;
+  z-index: 10;
+  width: 70%;
+  height: 70%;
+
+  top: 20%;
+  left: 25%;
+  display: block;
+  cursor: default;
+}
+
+.slide__check:checked + .slide__base .slide__inner {
+  animation-name: slider;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: slider;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.slide__textbox {
+  height: 80%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 1%;
+  overflow: auto;
+  line-height: 25px;
+}
+
+.slide__calign {
+  float: right;
+  padding-right: 60px;
+  font-size: 50px;
+}
+
+.slide__close {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  z-index: 10;
+  text-align: right;
+  cursor: pointer;
+}
+
+/* -----------------------------LEFT SIDE BOX AND SCROLL BAR ----------------------*/
+
+.force-overflow {
+  min-height: 450px;
+}
+#scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: black;
+}
+
+#scrollbar::-webkit-scrollbar {
+  width: 12px;
+  background-color: black;
+}
+#scrollbar::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(41, 187, 255, 0.8);
+  background-color: rgb(0, 0, 0);
+}
+
+.leftsidebox {
+  height: 84vh;
+  width: 18vw;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.mainlefttitles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: stretch;
+  margin-top: 5px;
+  margin-left: 7px;
+  width: 17vw;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Acme");
+.acmefont {
+  cursor: pointer;
+  font-family: "Acme", sans-serif;
+  font-size: 23px;
+}
+
+
+
+.slideRight {
+  animation-name: sliderRight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: sliderRight;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  position: relative;
+}
+.slideLeft {
+  animation-name: sliderLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: sliderLeft;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes sliderRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@-webkit-keyframes sliderRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes sliderLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@-webkit-keyframes sliderLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}

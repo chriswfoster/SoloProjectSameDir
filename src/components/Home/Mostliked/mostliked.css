@@ -1,0 +1,147 @@
+.liked__inner {
+  position: absolute;
+  z-index: 3;
+  width: 50%;
+  height: 65%;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: grey;
+  top: 25%;
+  left: 35%;
+  display: block;
+  cursor: default;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+
+.likednittifont {
+  font-family: "nitti", sans-serif;
+}
+
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+}
+
+.likedstorytext {
+  overflow: auto;
+  height: 40%;
+  opacity: .625;
+  padding: 5px;
+
+}
+
+#likedscrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: black;
+}
+
+#likedscrollbar::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(255, 66, 217, 0.589);
+}
+#likedscrollbar::-webkit-scrollbar-corner {
+  background-color: rgba(255, 66, 217, 0.8);
+}
+#likedscrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 66, 217, 0.8);
+  background-color: rgb(0, 0, 0);
+}
+
+.likedinfluenceflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: stretch;
+  height: 25%;
+  margin-top: 25px;
+}
+
+.likedinfluence {
+  height: 100%;
+  width: 45%;
+  padding: 5px;
+  overflow: auto;
+  opacity: .625;
+}
+
+.fader {
+  animation-name: fader;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: fader;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fader__close {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  z-index: 3;
+
+  cursor: pointer;
+  color: rgba(255, 66, 217, 0.596);
+}
+.fader__calign {
+  right: 0%;
+  margin-top: 5px;
+  margin-right: 15px;
+  font-size: 50px;
+}
+.liked__inner:hidden {
+  display: none;
+}
+
+.hideit {
+  animation-name: faderr;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: faderr;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes faderr {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes faderr {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

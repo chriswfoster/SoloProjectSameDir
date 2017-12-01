@@ -1,0 +1,393 @@
+.navbuttoncircle {
+  width: 70px;
+  height: 70px;
+
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.navbuttoncircle img {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  right: 18%;
+  bottom: 18%;
+}
+
+.navbuttonhomeicon {
+  right: 2%;
+  bottom: 2%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-attachment: sticky;
+  background-position-y: 100px;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+.navbuttonhomeicon img {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  right: 20%;
+  bottom: 20%;
+}
+
+.navbuttonyourpageicon {
+  right: 2%;
+  bottom: 2%;
+  cursor: pointer;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-attachment: sticky;
+  background-position-y: 100px;
+  width: 70px;
+  height: 70px;
+}
+
+.navbuttonyourpageicon img {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  right: 20%;
+  bottom: 20%;
+}
+
+.navbuttondarkicon {
+  right: 2%;
+  bottom: 2%;
+  cursor: pointer;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-attachment: sticky;
+  background-position-y: 100px;
+  width: 70px;
+  height: 70px;
+}
+.navbuttondarkicon img {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 7%;
+  bottom: 7%;
+}
+
+.navbuttonretroicon {
+  right: 2%;
+  bottom: 2%;
+  cursor: pointer;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-attachment: sticky;
+  background-position-y: 100px;
+  width: 70px;
+  height: 70px;
+}
+.navbuttonretroicon img {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 7%;
+  bottom: 7%;
+}
+
+.navbuttonbouncer {
+  animation-delay: 2s;
+  animation-name: moveit;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-name: moveit;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.navbuttonroller {
+  animation-name: rollit;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: rollit;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.navbuttonrollerreverse {
+  animation-name: rollitreverse;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: rollitreverse;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.navbuttonmovehome {
+  animation-name: movehome;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: movehome;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.navbuttonmovehomereverse {
+  animation-name: movehomereverse;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: movehomereverse;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.navbuttonmoveyourpage {
+  animation-name: moveyourpage;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: moveyourpage;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.navbuttonmoveyourpagereverse {
+  animation-name: moveyourpagereverse;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: moveyourpagereverse;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.navbuttonmovedark {
+  animation-name: movedark;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: movedark;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.navbuttonmovedarkreverse {
+  animation-name: movedarkreverse;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: movedarkreverse;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.navbuttonmoveretro {
+  animation-name: moveretro;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: moveretro;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.navbuttonmoveretroreverse {
+  animation-name: moveretroreverse;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: moveretroreverse;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes moveit {
+  0% {
+    bottom: 2%;
+  }
+  25% {
+    bottom: 4%;
+  }
+  50% {
+    bottom: 2%;
+  }
+  75% {
+    bottom: 4%;
+  }
+  100% {
+    bottom: 2%;
+  }
+}
+@-webkit-keyframes moveit {
+  0% {
+    bottom: 2%;
+  }
+  25% {
+    bottom: 4%;
+  }
+  50% {
+    bottom: 2%;
+  }
+  75% {
+    bottom: 4%;
+  }
+  100% {
+    bottom: 2%;
+  }
+}
+@keyframes rollit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
+@-webkit-keyframes rollit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
+@keyframes rollitreverse {
+  from {
+    transform: rotate(315deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rollitreverse {
+  from {
+    transform: rotate(315deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes movehome {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 7%;
+  }
+}
+@-webkit-keyframes movehome {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 7%;
+  }
+}
+@keyframes movehomereverse {
+  0% {
+    right: 7%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+@-webkit-keyframes movehomereverse {
+  0% {
+    right: 7%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+
+@keyframes moveyourpage {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 12%;
+  }
+}
+@-webkit-keyframes moveyourpage {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 12%;
+  }
+}
+@keyframes moveyourpagereverse {
+  0% {
+    right: 12%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+@-webkit-keyframes moveyourpagereverse {
+  0% {
+    right: 12%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+
+@keyframes movedark {
+  0% {
+    bottom: 2%;
+  }
+  100% {
+    bottom: 11%;
+  }
+}
+@-webkit-keyframes movedark {
+  0% {
+    bottom: 2%;
+  }
+  100% {
+    bottom: 11%;
+  }
+}
+
+@keyframes movedarkreverse {
+  0% {
+    bottom: 11%;
+  }
+  100% {
+    bottom: 2%;
+  }
+}
+@-webkit-keyframes movedarkreverse {
+  0% {
+    bottom: 11%;
+  }
+  100% {
+    bottom: 2%;
+  }
+}
+
+@keyframes moveretro {
+  0% {
+    bottom: 2%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
+@-webkit-keyframes moveretro {
+  0% {
+    bottom: 2%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
+
+@keyframes moveretroreverse {
+  0% {
+    bottom: 20%;
+  }
+  100% {
+    bottom: 2%;
+  }
+}
+@-webkit-keyframes moveretroreverse {
+  0% {
+    bottom: 20%;
+  }
+  100% {
+    bottom: 2%;
+  }
+}

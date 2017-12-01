@@ -1,0 +1,478 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@font-face {
+  font-family: "nitti";
+  src: url("./Nitti_Font/nitti-webfont.eot");
+  src: url("./Nitti_Font/nitti-webfont.eot?#iefix") format("embedded-opentype"),
+    url("./Nitti_Font/nitti-webfont.woff") format("woff"),
+    url("./Nitti_Font/nitti-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  ---------------- GLOBAL RETRO CSS ----------------   */
+/*  ------- RETRO BEGINNING  ---------  */
+.global_retro_font {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(74, 201, 206);
+  letter-spacing: 2px;
+}
+.global_retro_button {
+  padding: 10px 10px 8px 10px;
+  color: rgb(74, 201, 206);
+  letter-spacing: 2px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(255, 84, 255);
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+.global_retro_x_circle {
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  z-index: 6;
+  float: right;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 50px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  background-image: url("./Retrothemecontents/fixedx.png");
+  background-size: 100% 100%;
+}
+
+.global_retro_bodybackground {
+  background-image: url(./Retrothemecontents/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: sticky;
+  background-position-y: 100px;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.global_retro_navz {
+  background-image: url(./Retrothemecontents/retro.jpg);
+  background-repeat: no-repeat;
+  background-size: 110vw;
+  background-position-y: 0px;
+  background-position-x: -7px;
+  color: rgb(74, 201, 206);
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+}
+
+.global_retro_inputboxes {
+  border-style: inset;
+  border-color: rgb(255, 84, 255);
+  border-width: 2px;
+  padding-left: 3px;
+  padding-right: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(74, 201, 206);
+  z-index: 5;
+}
+.global_retro_popupboxes {
+  background-color: rgb(35, 17, 36);
+  border-style: outset;
+  border-color: rgb(255, 84, 255);
+  border-width: 2px;
+}
+.global_retro_fancy_title_line {
+  background-color: rgb(74, 201, 206);
+}
+.global_retro_yournewpost_button {
+  border-style: outset;
+  background-color: rgb(35, 17, 36);
+  color: rgb(74, 201, 206);
+  border-color: rgb(255, 84, 255);
+  font-family: "Orbitron", sans-serif;
+  font-size: 13px;
+  top: 45%;
+  left: 4%;
+}
+.global_retro_spiralspin_gif {
+  animation: spiralspin infinite 5s linear;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 13.5%;
+  background-size: 100% 100%;
+  background-image: url(./Retrothemecontents/gotcha.svg);
+}
+.global_retro_loginbuttons {
+  padding: 10px 10px 8px 10px;
+  color: rgb(74, 201, 206);
+  letter-spacing: 2px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(255, 84, 255);
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgb(35, 17, 36);
+  font-family: "Orbitron", sans-serif;
+}
+.global_retro_title_text {
+  font-family: "Orbitron", sans-serif;
+  max-width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgb(74, 201, 206);
+}
+.global_retro_animatelinespan {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 5px;
+}
+.global_retro_animatelinespan:hover + .linespan {
+  background-color: rgb(255, 84, 255);
+}
+.linespan {
+  height: 2px;
+  width: auto;
+  background-color: grey;
+}
+.global_retro_pinktext {
+  color: rgb(255, 84, 255);
+}
+.global_retro_plusbutton {
+  background-color: rgb(255, 94, 223);
+  color: white;
+  border-radius: 50%;
+}
+.global_retro_homebutton {
+  background-color: rgb(255, 94, 223);
+  border-radius: 50%;
+}
+.global_retro_yourbutton {
+  background-color: rgb(255, 94, 223);
+  border-radius: 50%;
+}
+.global_retro_darkbutton {
+  background-color: rgb(255, 94, 223);
+  border-radius: 50%;
+}
+.global_retro_retrobutton {
+  background-color: rgb(255, 94, 223);
+  border-radius: 50%;
+}
+
+/*  ------------  RETRO ENDING -------------- */
+
+.global_pi_font {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(74, 201, 206);
+  letter-spacing: 2px;
+}
+.global_pi_button {
+  padding: 10px 10px 8px 10px;
+  color: rgb(74, 201, 206);
+  letter-spacing: 2px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(255, 84, 255);
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+.global_pi_x_circle {
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  z-index: 6;
+  float: right;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 50px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  background-image: url("./Retrothemecontents/fixedx.png");
+  background-size: 100% 100%;
+}
+
+.global_pi_bodybackground {
+  background-image: url(./Retrothemecontents/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: sticky;
+  background-position-y: 100px;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hide;
+}
+.global_pi_navz {
+  background-image: url(./Retrothemecontents/retro.jpg);
+  background-repeat: no-repeat;
+  background-size: 110vw;
+  background-position-y: 0px;
+  background-position-x: -7px;
+  color: rgb(74, 201, 206);
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+}
+
+.global_pi_inputboxes {
+  border-style: inset;
+  border-color: rgb(255, 84, 255);
+  border-width: 2px;
+  padding-left: 3px;
+  padding-right: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(74, 201, 206);
+  z-index: 5;
+}
+.global_pi_popupboxes {
+  background-color: rgb(35, 17, 36);
+  border-style: outset;
+  border-color: rgb(255, 84, 255);
+  border-width: 2px;
+}
+.global_pi_fancy_title_line {
+  background-color: rgb(74, 201, 206);
+}
+.global_pi_yournewpost_button {
+  border-style: outset;
+  background-color: rgb(35, 17, 36);
+  color: rgb(74, 201, 206);
+  border-color: rgb(255, 84, 255);
+  font-family: "Orbitron", sans-serif;
+  font-size: 13px;
+}
+.global_pi_loginbuttons {
+  padding: 10px 10px 8px 10px;
+  color: rgb(74, 201, 206);
+  letter-spacing: 2px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(255, 84, 255);
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgb(35, 17, 36);
+  font-family: "Orbitron", sans-serif;
+}
+.global_pi_title_text {
+  font-family: "Orbitron", sans-serif;
+  max-width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgb(74, 201, 206);
+}
+.global_pi_animatelinespan {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 5px;
+}
+.global_pi_animatelinespan:hover + .linespan {
+  background-color: rgb(255, 84, 255);
+}
+.global_pi_sidebartext {
+  color: rgb(255, 84, 255);
+}
+
+/*  ------------  PI ENDING  ---------   */
+
+.global_dark_font {
+  font-family: "nitti", sans-serif;
+  color: rgb(85, 85, 85);
+  letter-spacing: 2px;
+}
+.global_dark_button {
+  padding: 10px 10px 8px 10px;
+  color: rgb(85, 85, 85);
+  letter-spacing: 2px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(163, 163, 163);
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+.global_dark_x_circle {
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  z-index: 6;
+  float: right;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("./Darkthemecontents/closex.png");
+  background-size: 100% 100%;
+}
+
+.global_dark_bodybackground {
+  background-image: url(./Darkthemecontents/blackhole.gif);
+  background-repeat: no-repeat;
+  background-attachment: sticky;
+  background-position-y: 13vh;
+  background-position-x: 24%;
+  background-size: 110vw;
+  min-width: 50vw;
+  min-height: 50vh;
+  max-height: 100vh;
+  overflow: scroll;
+  background-color: black;
+}
+.global_dark_navz {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: 80%;
+  background-position-x: 0px;
+  color: rgb(85, 85, 85);
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+}
+
+.global_dark_inputboxes {
+  border-style: inset;
+  border-color: rgb(163, 163, 163);
+  border-width: 2px;
+  padding-left: 3px;
+  padding-right: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(85, 85, 85);
+  z-index: 5;
+}
+.global_dark_popupboxes {
+  background-color: rgb(0, 0, 0);
+  border-style: outset;
+  border-color: rgb(163, 163, 163);
+  border-width: 2px;
+}
+.global_dark_fancy_title_line {
+  background-color: rgb(163, 163, 163);
+}
+.global_dark_yournewpost_button {
+  border-style: outset;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(163, 163, 163);
+  font-family: "Nitti", sans-serif;
+  font-size: 20px;
+  left: 10%;
+  top: 40%;
+  width: 35%;
+  position: relative;
+}
+.global_dark_eye_gif {
+  animation: spiralspin infinite 5s linear;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url(./Darkthemecontents/blackhole.png);
+}
+.global_dark_loginbuttons {
+  padding: 10px 10px 8px 10px;
+  color: rgb(85, 85, 85);
+  letter-spacing: 2px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: rgb(163, 163, 163);
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "nitti", sans-serif;
+}
+.global_dark_title_text {
+  font-family: "nitti", sans-serif;
+  max-width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgb(85, 85, 85);
+}
+.global_dark_animatelinespan {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 5px;
+}
+.global_dark_animatelinespan:hover + .linespan {
+  background-color: rgb(206, 206, 206);
+}
+.global_dark_sidebartext {
+  color: rgb(85, 85, 85);
+}
+
+.global_dark_plusbutton {
+  background-color: rgb(85, 85, 85);
+  color: white;
+  border-radius: 50%;
+}
+.global_dark_homebutton {
+  background-color: rgb(85, 85, 85);
+  border-radius: 50%;
+}
+.global_dark_yourbutton {
+  background-color: rgb(85, 85, 85);
+  border-radius: 50%;
+}
+.global_dark_darkbutton {
+  background-color: rgb(85, 85, 85);
+  border-radius: 50%;
+}
+.global_dark_retrobutton {
+  background-color: rgb(85, 85, 85);
+  border-radius: 50%;
+}

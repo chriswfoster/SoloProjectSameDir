@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch:700");
+@import url("https://fonts.googleapis.com/css?family=Covered+By+Your+Grace");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+.newpostdreamnotesfont {
+  font-size: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.newpostdreamfont {
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+}
+
+.spiralspinz {
+  animation: spiralspin infinite 5s linear;
+  height: 160px;
+  position: absolute;
+  top: 13.5%;
+}
+.spinzheight{
+  height: 200px;
+  width: 300px;
+  float: left;
+  float: top;
+  position: absolute;
+}
+
+.yournewpost {
+  width: auto;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+
+}
+.yournewpost:hover {
+  border-radius: 553px;
+  box-shadow: 10px 10px 55px rgb(0, 0, 0);
+}
+
+@keyframes spiralspin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sliderIn {
+  z-index: 5;
+  animation-name: newPostSlider;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: newPostSlider;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes newPostSlider {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes newPostSlider {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.newpostbackgroundhider {
+  display: none;
+}
+
+.newpostbackground {
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  right: 2.5%;
+  top: 2.5%;
+  overflow: auto;
+}
+
+.newpostflexorganizer {
+  top: 7%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.spantext {
+  margin-top: 3%;
+}
+
+.filler {
+  width: 200px;
+}
+
+.titletext {
+  width: 30vw;
+  font-size: 12pt;
+}
+
+.storytext {
+  min-height: 200px;
+  font-size: 12pt;
+  width: 50vw;
+}
+.influencespandivs {
+  width: 20vw;
+}
+.influencetext {
+  min-height: 100px;
+  font-size: 12pt;
+  width: 18vw;
+}
+.organizeinfluenceboxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  margin-top: 3%;
+}
+.newposttitleline {
+  height: 2px;
+  width: 10vw;
+  display: block;
+}
+
+.newposttitleflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}

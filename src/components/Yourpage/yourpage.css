@@ -1,0 +1,204 @@
+.homeflex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch:700");
+@import url("https://fonts.googleapis.com/css?family=Covered+By+Your+Grace");
+
+.yourdreamfont {
+  font-family: "Covered By Your Grace", sans-sarif;
+  font-size: 30px;
+}
+
+.yourcenterposts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  margin-top: 1%;
+}
+
+.yourscrollfix {
+  overflow-y: scroll;
+  height: 83%;
+}
+.yourwrapsharebuttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: stretch;
+}
+
+.yourpostboxes {
+  width: 60vw;
+  height: auto;
+  padding: 5px;
+}
+
+.yourpagedatepos {
+  font-size: 11px;
+  margin-bottom: -2%;
+}
+
+.yourpagetitleline {
+  height: 1px;
+  width: 10vw;
+  display: block;
+  margin: 5px;
+}
+
+.yourpagetitleflex {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+/* ----------   EDIT POPUP BOX --------------       */
+
+/* Start popup css */
+
+@keyframes bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes inner {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes inner {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.yourpopup__hide {
+  display: none;
+}
+
+.yourpopup__base,
+.yourpopup__bg {
+}
+
+.yourpopup__base {
+  background-color: rgba(35, 17, 36, 0.795);
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.basereveal {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: zoom-out;
+  background-color: rgba(35, 17, 36, 0.795);
+  cursor: zoom-out;
+  display: block;
+  animation-name: bg;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: bg;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.yourpopup__inner {
+  position: absolute;
+  z-index: 11;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  display: block;
+  cursor: default;
+  animation-name: inner;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: inner;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.yourpopup__textbox {
+  height: 95%;
+  width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.yourpoptextboxes {
+  height: 60%;
+  width: 100%;
+}
+.yourpoptextboxes2 {
+  height: 25%;
+  width: 100%;
+}
+.yourpoptextboxes3 {
+  height: 25%;
+  width: 100%;
+}
+
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+}
+
+.yoursavebuttonalignment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: stretch;
+}

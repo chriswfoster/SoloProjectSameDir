@@ -18,7 +18,7 @@ const controller = require("./controller.js")
 const app = express()
 
 //this will allow you to get rid of the proxy server. It'll reference the server directly.
-app.use(express.static(`${__dirname}/build`))
+app.use(express.static(`${__dirname}../build`))
 
 //remember app goes before this.
 const massiveConnection = massive(connectionString) // tell massive to make the connection

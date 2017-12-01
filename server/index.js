@@ -149,7 +149,7 @@ app.get("/api/test", (req, res, next) => {
 })
 
 app.get("*", (req, res, next) => {
-  res.sendFiles(`${__dirname}/../build/index.html`)
+  res.sendFile(`${__dirname}/../build/index.html`)
 })
 
 app.listen(port, () => {

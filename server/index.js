@@ -148,6 +148,10 @@ app.get("/api/test", (req, res, next) => {
     .catch(console.log)
 })
 
+app.get("*", (req, res, next) => {
+  res.sendFiles(`${__dirname}/../build/index.html`)
+})
+
 app.listen(port, () => {
   console.log(`Listening on dat port: ${port}`)
 })

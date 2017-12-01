@@ -18,7 +18,7 @@ const controller = require("./controller.js")
 const app = express()
 
 //this will allow you to get rid of the proxy server. It'll reference the server directly.
-app.use(express.static(`${__dirname}../build`))
+app.use(express.static(`${__dirname}/../build`))
 
 //remember app goes before this.
 const massiveConnection = massive(connectionString) // tell massive to make the connection
@@ -93,13 +93,13 @@ passport.deserializeUser(function(obj, done) {
 app.get(
   "/login",
   passport.authenticate("auth0", {
-    successRedirect: "http://localhost:80/yourpage" //this is the page they'll land on. Could make it their user page.
+    successRedirect: "/yourpage" //this is the page they'll land on. Could make it their user page.
   })
 )
 //when sent here, you log out and return to /
 app.get("/logout", function(req, res) {
   req.logout()
-  res.redirect("http://localhost:80/")
+  res.redirect("/")
 })
 
 //will check if there's a req.user. If there wasn't, send 404, if there was, send back user.

@@ -148,8 +148,9 @@ app.get("/api/test", (req, res, next) => {
     .catch(console.log)
 })
 
+const path = require("path")
 app.get("*", (req, res, next) => {
-  res.sendFile(`${__dirname}/../build/index.html`)
+  res.sendFile(path.join(__dirname, "/../build/index.html"))
 })
 
 app.listen(port, () => {

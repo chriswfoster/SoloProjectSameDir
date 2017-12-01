@@ -9,6 +9,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
+    "forever": "^0.15.3",
     "massive": "^4.5.0",
     "moment": "^2.19.3",
     "nodemon": "^1.12.1",

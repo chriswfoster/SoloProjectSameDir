@@ -42,14 +42,14 @@ pre {
 
 #likedscrollbar::-webkit-scrollbar {
   width: 12px;
-  background-color: rgba(255, 66, 217, 0.589);
+  background-color: rgba(134, 134, 134, 0.589);
 }
 #likedscrollbar::-webkit-scrollbar-corner {
-  background-color: rgba(255, 66, 217, 0.8);
+  background-color: rgba(116, 116, 116, 0.8);
 }
 #likedscrollbar::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 66, 217, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(131, 131, 131, 0.8);
   background-color: rgb(0, 0, 0);
 }
 

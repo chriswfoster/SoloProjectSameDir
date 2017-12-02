@@ -40,7 +40,7 @@ class Yourpage extends Component {
     console.log(this.props)
     const list = this.props.allyourposts.map((dream, i) => (
       <div key={i} >
-        <div className="yourcenterposts yourscrollfix">
+        <div className="yourcenterposts">
         
         <div
           className={this.props.theme.popupboxes.concat(" ", "yourpostboxes")}
@@ -102,7 +102,7 @@ class Yourpage extends Component {
         <NewPost />
 
         <Navbutton />
-        <div className="yourscrollfix">{list}</div>
+        <div className="yourscrollfix" id="scrollbar">{list}</div>
       </div>
     )
   }

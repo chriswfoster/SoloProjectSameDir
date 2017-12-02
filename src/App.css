@@ -494,6 +494,7 @@
     color: rgb(194, 194, 194);
     border-color: rgb(163, 163, 163);
     background-color: rgb(0, 0, 0);
+  
   }
     .global_retro_x_circle, .global_dark_x_circle {
     margin-top: 2%;
@@ -519,7 +520,13 @@
     }
     .global_dark_fancy_title_line, .global_retro_fancy_title_line{
       display: none;
-    }
+      }
+      .global_retro_title_text {
+      color: rgb(163, 163, 163);
+      }
+      .global_retro_animatelinespan:hover + .linespan {
+        background-color: rgb(255, 255, 255);
+      }
 
 }
 

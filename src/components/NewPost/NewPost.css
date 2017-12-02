@@ -155,4 +155,32 @@
   align-content: stretch;
 }
 
+@media screen and (max-width: 850px){
+.newpostdreamnotesfont {
+  font-size:30px;
+}
+.titletext {
+  width: 75vw;
+  font-size: 10pt;
+}
+.storytext {
+  min-height: 10%;
+  font-size: 10pt;
+  width: 75vw;
+}
+.influencetext {
+  height: 40%;
+  font-size: 10pt;
+  width: 36vw;
+}
+.influencespandivs {
+  width: 40vw;
+  font-size: 10pt;
+  min-height: 40%;
+}
+.spantext {
+ font-size: 10pt;
+}
 
+
+}

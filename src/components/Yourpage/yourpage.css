@@ -204,13 +204,19 @@ pre {
 }
 
 
+
 @media screen and (max-width: 850px){
 .yourpagedatepos{
   margin: 0%;
 }
 .yourpostboxes{
   width: 80vw;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
-
+.yourpopup__inner {
+      width: 75%;
+    height: 75%;
+    top: 2.5%;
+    left: 2.5%;
+ }
 }

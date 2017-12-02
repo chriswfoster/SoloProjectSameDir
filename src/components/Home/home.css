@@ -199,6 +199,7 @@
   z-index: 10;
   text-align: right;
   cursor: pointer;
+
 }
 
 .poptextboxes {
@@ -335,7 +336,6 @@ pre {
   z-index: 10;
   width: 70%;
   height: 70%;
-
   top: 20%;
   left: 25%;
   display: block;
@@ -514,8 +514,37 @@ pre {
   }
   .spinzheight{
     left: 30%;
-      top: 0%;
+    top: 0%;
     position: absolute;
   }
- 
+  .slide__inner {
+  width: 85%;
+  left: 7.5%;
+  height: 90%;
+  top: 5%;
+  }
+  
+@keyframes slider {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 5%;
+  }
+}
+@-webkit-keyframes slider {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 5%;
+  }
+}
+.slide__textbox {
+  height: 90%; 
+}
+.savebuttonalignment {
+   margin-top: 8%;
+  }
+  
 }

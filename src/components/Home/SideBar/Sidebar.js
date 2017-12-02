@@ -17,9 +17,7 @@ class Sidebar extends Component {
         user_id: this.props.user.user_id,
         post_id: postid
       })
-      .then(response => {
-        return response.data
-      })
+      .then(() => window.location.reload())
   }
 
   render(props) {

@@ -23,6 +23,10 @@ class Comments extends Component {
     // getAllComments(this.props.edit_me)
   }
 
+  handleLogin() {
+    window.location.href = "http://localhost:/login"
+  }
+
   render(props) {
     const { typeComment} = this.props
     const commentlist =

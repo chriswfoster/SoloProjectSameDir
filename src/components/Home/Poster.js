@@ -75,7 +75,7 @@ class Poster extends Component {
                <pre> {dream.story_text}</pre>
      </div>
                 <div className="wrapstorybuttons">
-                  <div className={this.props.theme.button}>LIKE</div>
+                  <div className={this.props.theme.button} onClick={() => this.addLike(dream.post_id)}>LIKE</div>
 
                   <label
                     htmlFor={`popup__${i}`}

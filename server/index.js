@@ -23,7 +23,7 @@ const app = express()
 
 
 
-// app.use(express.static(`${__dirname}/../build`))
+app.use(express.static(`${__dirname}/../build`))
 
 
 
@@ -103,13 +103,13 @@ passport.deserializeUser(function(obj, done) {
 app.get(
   "/login",
   passport.authenticate("auth0", {
-    successRedirect: "http://localhost:3000/yourpage" //this is the page they'll land on. Could make it their user page.
+    successRedirect: "/yourpage" //this is the page they'll land on. Could make it their user page.
   })
 )
 //when sent here, you log out and return to /
 app.get("/logout", function(req, res) {
   req.logout()
-  res.redirect("http://localhost:3000/")
+  res.redirect("/")
 })
 
 //will check if there's a req.user. If there wasn't, send 404, if there was, send back user.
@@ -160,10 +160,10 @@ app.get("/api/test", (req, res, next) => {
 
 
 
-// const path = require("path")
-// app.get("*", (req, res, next) => {
-//   res.sendFile(path.join(__dirname, "/../build/index.html"))
-// })
+const path = require("path")
+app.get("*", (req, res, next) => {
+  res.sendFile(path.join(__dirname, "/../build/index.html"))
+})
 
 
 

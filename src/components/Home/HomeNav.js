@@ -16,10 +16,10 @@ class Home extends Component {
   }
 
   handleLogin() {
-    window.location.href = "http://localhost:/login"
+    window.location.href = "/login"
   }
   handleLogout() {
-    window.location.href = "http://localhost:/logout"
+    window.location.href = "/logout"
   }
 
   render() {

@@ -38,9 +38,7 @@ class NewPost extends Component {
         back_story: this.props.type_life,
         user_id: this.props.user.user_id
       })
-      .then(response => {
-        return response.data
-      })
+      .then(() => window.location.reload())
   }
 
   slideInFunction() {
@@ -114,7 +112,7 @@ class NewPost extends Component {
               </div>
             </div>
 
-            <div onClick={this.createPost} className={this.props.theme.button.concat(' ', "spantext")}>
+            <div onClick={() => this.createPost() } className={this.props.theme.button.concat(' ', "spantext")}>
               CREATE POST
             </div>
           </div>

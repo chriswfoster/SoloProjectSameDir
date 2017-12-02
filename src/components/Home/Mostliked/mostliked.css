@@ -74,10 +74,10 @@ pre {
 
 .fader {
   animation-name: fader;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   -webkit-animation-name: fader;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -122,10 +122,10 @@ pre {
 
 .hideit {
   animation-name: faderr;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   -webkit-animation-name: faderr;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
 }
 

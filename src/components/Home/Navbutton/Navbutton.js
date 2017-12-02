@@ -105,6 +105,10 @@ class Navbutton extends Component {
             alt="HOME"
           />
         </Link>
+
+        {!this.props.user.user_id ? (
+        <div> </div>) :
+        (
         <Link to="/yourpage" className={this.state.yourpagebutton}>
           {" "}
           <img
@@ -112,6 +116,7 @@ class Navbutton extends Component {
             alt="Your Page"
           />{" "}
         </Link>
+        )}
         <div
           className={this.state.darkbutton}
           onClick={() => this.props.darkTheme()}

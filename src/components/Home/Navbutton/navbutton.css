@@ -391,3 +391,85 @@
     bottom: 2%;
   }
 }
+
+
+
+@media screen and (max-width: 850px){
+
+  .navbuttonretroicon {
+   display: none;
+  }
+  
+  .navbuttondarkicon {
+display: none;
+  }
+@keyframes movehome {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 30%;
+  }
+}
+@-webkit-keyframes movehome {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 30%;
+  }
+}
+@keyframes movehomereverse {
+  0% {
+    right: 30%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+@-webkit-keyframes movehomereverse {
+  0% {
+    right: 30%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+@keyframes moveyourpage {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 60%;
+  }
+}
+@-webkit-keyframes moveyourpage {
+  0% {
+    right: 2%;
+  }
+  100% {
+    right: 60%;
+  }
+}
+@keyframes moveyourpagereverse {
+  0% {
+    right: 60%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+@-webkit-keyframes moveyourpagereverse {
+  0% {
+    right: 60%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+
+
+
+
+
+}

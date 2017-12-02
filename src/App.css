@@ -458,24 +458,72 @@
   color: rgb(85, 85, 85);
 }
 
-.global_dark_plusbutton {
-  background-color: rgb(85, 85, 85);
-  color: white;
-  border-radius: 50%;
-}
-.global_dark_homebutton {
+.global_dark_plusbutton, .global_dark_homebutton, .global_dark_yourbutton, .global_dark_darkbutton, .global_dark_retrobutton {
   background-color: rgb(85, 85, 85);
   border-radius: 50%;
 }
-.global_dark_yourbutton {
-  background-color: rgb(85, 85, 85);
-  border-radius: 50%;
+
+
+@media screen and (max-width: 850px){
+.global_dark_eye_gif, .global_retro_spiralspin_gif{
+  display: none;
+  }
+   .global_retro_bodybackground, .global_dark_bodybackground, .global_retro_navz, .global_dark_navz {
+    background-color: black;
+    background-image:url();
+  }
+   .global_retro_loginbuttons, .global_dark_loginbuttons, .global_retro_button, global_dark_button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(182, 182, 182);
+    border-color: rgb(187, 187, 187);
+    font-family: "Orbitron", sans-serif;
+    font-size: 10px;
+  
+  }
+  .global_retro_yournewpost_button, .global_dark_yournewpost_button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(190, 190, 190);
+    border-color: rgb(197, 197, 197);
+    font-family: "Orbitron", sans-serif;
+    font-size: 10px;
+    width: 30%;
+      top: 0%;
+  }
+
+  .global_retro_font, .global_dark_font, .global_dark_popupboxes, .global_dark_inputboxes, .global_retro_popupboxes, .global_retro_inputboxes{
+    color: rgb(194, 194, 194);
+    border-color: rgb(163, 163, 163);
+    background-color: rgb(0, 0, 0);
+  }
+    .global_retro_x_circle, .global_dark_x_circle {
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    z-index: 6;
+    float: right;
+    background-repeat: no-repeat;
+    height: 20px;
+    cursor: pointer;
+    width: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("./Darkthemecontents/closex.png");
+    background-size: 100% 100%;
+    }
+
+    .global_dark_plusbutton, .global_retro_plusbutton, .global_dark_homebutton, .global_dark_yourbutton, .global_dark_darkbutton, .global_dark_retrobutton, .global_retro_homebutton, .global_retro_yourbutton, .global_retro_darkbutton, .global_retro_retrobutton {
+      background-color: rgb(85, 85, 85);
+      border-radius: 50%;
+    }
+    .global_retro_pinktext, .global_dark_sidebartext{
+      color: rgb(85, 85, 85);
+    }
+    .global_dark_fancy_title_line, .global_retro_fancy_title_line{
+      display: none;
+    }
+
 }
-.global_dark_darkbutton {
-  background-color: rgb(85, 85, 85);
-  border-radius: 50%;
-}
-.global_dark_retrobutton {
-  background-color: rgb(85, 85, 85);
-  border-radius: 50%;
-}
+
+
+
+
+

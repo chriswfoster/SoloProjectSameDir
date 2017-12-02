@@ -80,7 +80,7 @@ class Mostliked extends Component {
         )
     )
 
-    return <div>{evenfinder}</div>
+    return <div className="hidemenow">{evenfinder}</div>
   }
 }
 

@@ -41,7 +41,7 @@ class Home extends Component {
                 </button>
                 <button
                   onClick={this.handleLogin}
-                  className={this.props.theme.loginbuttons}
+                  className={this.props.theme.loginbuttons.concat(' ', "hidemenow")}
                 >
                   REGISTER
                 </button>

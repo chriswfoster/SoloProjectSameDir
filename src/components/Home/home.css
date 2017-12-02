@@ -483,3 +483,39 @@ pre {
     left: 0%;
   }
 }
+
+
+.hidemenow{
+ 
+}
+@media screen and (max-width: 850px){
+.hidemenow, .global_dark_eye_gif, .global_retro_spiralspin_gif{
+  display: none;
+  }
+  .leftsidebox {
+    height: 84vh;
+    width: 100vw;
+  }
+  .mainlefttitles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 100%;
+  }
+  .dreamnotesfont {
+    margin-left: 1%;
+    font-size: 20px;
+  }
+  .spinzheight{
+    left: 30%;
+      top: 0%;
+    position: absolute;
+  }
+ 
+}

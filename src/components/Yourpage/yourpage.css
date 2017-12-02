@@ -203,3 +203,14 @@ pre {
   align-content: stretch;
 }
 
+
+@media screen and (max-width: 850px){
+.yourpagedatepos{
+  margin: 0%;
+}
+.yourpostboxes{
+  width: 80vw;
+  margin-bottom: 1%;
+}
+
+}

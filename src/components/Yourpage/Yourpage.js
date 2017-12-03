@@ -80,7 +80,7 @@ class Yourpage extends Component {
                 " ",
                 this.props.theme.font
               )}
-              onClick={() => this.storyToShare(this.props.allyourposts.post_id)}
+              onClick={() => this.storyToShare(dream.post_id)}
             >
               SHARE
             </div>
